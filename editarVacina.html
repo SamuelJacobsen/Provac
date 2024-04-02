@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página de edição de vacina do MyHealth. Um site para contorlar as suas vacinas" >
+        <title>MyHealth - Editar Vacina</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/editarVacina.css">
+    </head>
+    <body>
+        <header>
+            <a id="titulo" href="/"><img id="logo" src="./img/logo.png"></img>MyHealth</a>
+            <nav>
+                <a  href="/home.html" class="botao simples">Minhas vacinas</a>
+                <button onclick="logout()" class="botao simples">Logout</button>
+            </nav>
+        </header>
+        <main>
+            <button class="botao excluir" onclick="toggleConfirmacao()"><img src="/img/trash.png" class="trashIcon">Excluir</button>
+            <form action="" class="formDados">
+                <div class="formContainer" id="container">
+                     
+                </div>
+                <div class="botao save" id="salvarBtn">Salvar alterações</div>
+            </form>
+            <div class="popUp" id="popUp">
+                <div class="popUpBox">
+                    <p class="warning">Tem certeza que deseja remover essa vacina?</p>
+                    <div class="popUpButtons">
+                        <button class="botao danger"  id="confirma">Sim</button>
+                        <button class="botao simples" onclick="toggleConfirmacao()" id="naoConfirma">Não</button>
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+
+    </body>
+    <script>
+        function toggleConfirmacao(){
+            var popUp = document.getElementById("popUp");
+            var display = popUp.style.display;
+            if(display != "flex"){
+                popUp.style.display = "flex";
+            }else{
+                popUp.style.display = "none";
+            }
+        }
+
+        function logout(){
+            localStorage.removeItem('usuarioLogado');
+            window.location.href = "index.html";
+        }
+    </script>
+     <script type="module" src="./javascript/editarVacina.js"></script>
+</html>

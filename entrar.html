@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página de recuperação de senha do MyHealth. Um site para contorlar as suas vacinas" >
+        <title>MyHealth - Entrar</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/entrar.css">
+        <script src="./javascript/entrar.js"></script>
+    </head>
+    <body>
+        <header>
+            <a id="titulo" href="/"><img id="logo" src="./img/logo.png"></img>MyHealth</a>
+        </header>
+        <main>
+            <form action="" class="formLongo">
+                <div class="">
+                    <label class="formLongoLabel" for="email">E-mail</label>
+                    <input class="formLongoInput" type="email" id="email" name="email">
+                    <label class="formLongoLabel" for="senha">Senha</label>
+                    <input class="formLongoInput" type="password" id="senha" name="senha">
+                    <p class="escondido" id="erro">E-mail e/ou senha inválidos.</p>
+                </div>
+                <div  id="entrarBtn" class="botao save">Entrar</div>
+            </form>
+            <a href="recuperarSenha.html" id="esqueci">Esqueci minha senha</a>
+        </main>
+        <script type="module" src="/javascript/entrar.js"></script>
+    </body>
+</html>

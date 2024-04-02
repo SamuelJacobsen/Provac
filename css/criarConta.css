@@ -1,0 +1,75 @@
+.danger {
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+}
+
+label{
+    margin-right: 25px;
+}
+
+.formDados{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    line-height: 43px;
+    align-content: space-between;
+    margin: 125px;
+}
+
+.formContainer {
+    display: grid;
+    grid-template-columns: 45%, auto;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+}
+
+#comprovante {
+    display: none;
+}
+
+#labelComprovante{
+   width: 30%;
+   margin-bottom: 10px;
+}
+
+.formLabel{
+    grid-column: 1;
+    text-align: right;
+    margin: 0;
+}
+
+#radios{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    color: white;
+}
+
+.formInput {
+    grid-column: 2;
+    height: 40px;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+    color: #419ED7;
+    border: none;
+    width: 100%;
+    padding: 5px;
+}
+
+#senhaRep{
+    margin-bottom: 10px;
+    border: none;
+    height: 40px;
+    width: 100%;
+    font-family: 'Averia Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 43px;
+}
+

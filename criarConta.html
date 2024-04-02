@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página criação de conta do MyHealth. Um site para contorlar as suas vacinas" >
+        <title>MyHealth - Criar Conta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/criarConta.css">
+    </head>
+    <body>
+
+        <header>
+            <a id="titulo" href="/"><img id="logo" src="./img/logo.png"></img>MyHealth</a>
+        </header>
+        <main>
+            <form action="" class="formDados">
+                <div class="formContainer">
+                    <label class="formLabel" for="nome">Nome completo</label>
+                    <input class="formInput" type="text" id="nome" name="nome">
+                    <div class="formLabel">Sexo</div>
+                    <div class="formInput" id="generos">
+                        <input type="radio" name="generos" id="masculino" value="masculino">
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="generos" id="feminino" value="feminino">
+                        <label for="feminino">Feminino</label>
+                    </div>
+                    <label class="formLabel" for="dataNac">Data de nascimento</label>
+                    <input class="formInput" type="date" id="dataNasc" name="dataNasc">
+                    <label class="formLabel" for="email">E-mail</label>
+                    <input class="formInput" type="email" name="email" id="email" >
+                    <label class="formLabel" for="senha">Senha</label>
+                    <input class="formInput" type="password" id="senha" name="senha">
+                    <label class="formLabel senhaRep" for="senhaRep">Repetir senha</label>
+                    <div class="formInput">
+                        <input  type="password" name="senhaRep" id="senhaRep">
+                        <p class="escondido" id="erroSenha">Senha não confere!</p>
+                    </div>
+                    
+                </div>
+                    <div id="criarContaBtn" class="botao save">Cadastrar</div>
+            </form>
+            
+        </main>
+
+        <script type="module" src="/javascript/criarConta.js"></script>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Página de edição de vacina do MyHealth. Um site para contorlar as suas vacinas" >
+        <title>MyHealth - Editar Vacina</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Averia+Libre&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/novaVacina.css">
+    </head>
+    <body>
+        <header>
+            <a id="titulo" href="/home.html"><img id="logo" src="./img/logo.png"></img>MyHealth</a>
+            <nav>
+                <a  href="/home.html" class="botao simples">Minhas vacinas</a>
+                <button onclick="logout()" class="botao simples">Logout</button>
+            </nav>
+        </header>
+        <main>
+            <form action="" class="formDados">
+                <div class="formContainer">
+                        <label name="dataVac"class="formLabel">Data de vacinação</label>
+                        <input type="date" name="dataVac" class="formInput" id="dataVac" >
+                        <label for="vacina" class="formLabel" for="vacinaNome">Vacina</label>
+                        <input type="text"  id="vacinaNome" name="vacinaNome" class="formInput">
+                    <div class="formLabel">Dose</div>
+                    <div class="formInput" id="radios">
+                        <input type="radio" name="dose" class="radio" id="1a. dose" value="1a. dose">
+                        <label for="1a. dose" >1a. Dose</label>
+                        <input type="radio" name="dose" class="radio" 
+                        id="2a. dose" value="2a. dose">
+                        <label for="2a. dose">2a. Dose</label>
+                        <input type="radio" name="dose" class="radio" id="3a. dose" value="3a. dose">
+                        <label for="3a. dose">3a. Dose</label>
+                        <input type="radio" name="dose" class="radio" id="reforço" value="Reforço">
+                        <label for="reforço">Reforço</label>
+                        <input type="radio" name="dose" class="radio" id="dose única" value="Dose única">
+                        <label for="dose única">Dose Única</label>
+                    </div>
+                        <div class="formLabel">Comprovante da vacina</div>
+                        <div class="formInput2">
+                            <label for="comprovante" class="botao" id="labelComprovante">Selecionar imagem...</label> 
+                            <input type="file" name="comprovante" id="comprovante"></input>
+                            <img  class="escondido" src="" alt="comprovante de vacinação" id="selectedImage">
+                        </div>
+                        <label for="dataProx" class="formLabel">Próxima Vacinação</label>
+                        <input type="date" name="dataProx" class="formInput" id="dataProx" >
+                </div>
+                <div id="novaBtn" class="botao save">Cadastrar</div>
+            </form>
+        </main>
+        <script type="module" src="./javascript/novaVacina.js"></script>
+        <script src="./javascript/logout.js"></script>
+    </body>
+</html>
